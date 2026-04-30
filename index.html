@@ -10,13 +10,14 @@
     nav { background: #222; padding: 12px; text-align: center; }
     nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
     section { max-width: 1000px; margin: 30px auto; background: white; padding: 25px; border-radius: 10px; }
-    .button { display: inline-block; background: #003366; color: white; padding: 12px 18px; border-radius: 6px; text-decoration: none; }
+    .button { display: inline-block; background: #003366; color: white; padding: 12px 18px; border-radius: 6px; text-decoration: none; margin: 8px 10px 8px 0; }
     iframe { width: 100%; height: 650px; border: 0; }
     footer { text-align: center; padding: 20px; color: #666; }
+    h3 { margin-top: 20px; }
   </style>
 </head>
 <body>
- 
+
 <header>
   <h1>PPLSS Student Events Calendar</h1>
   <p>Find upcoming events, workshops, student activities, and school-wide opportunities.</p>
@@ -25,30 +26,50 @@
 <nav>
   <a href="#calendar">Calendar</a>
   <a href="#submit">Submit Event</a>
+  <a href="#degree">Degree Plans</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="calendar">
-  <h2> PPLSS Student Event Calendar </h2>
+  <h2>PPLSS Student Event Calendar</h2>
   <p>This calendar includes events for students in the School of Political Science, Public Affairs, Legal & Security Studies.</p>
 
-  <!-- Replace this iframe with your Google Calendar embed code -->
-  <iframe src="https://calendar.google.com/calendar/embed?src=ac655801d537be95ecdef0d3b4cda13a965a4346ed85a1804cb3ab9fca864bc4%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
+  <iframe src="https://calendar.google.com/calendar/embed?src=ac655801d537be95ecdef0d3b4cda13a965a4346ed85a1804cb3ab9fca864bc4%40group.calendar.google.com&ctz=America%2FChicago"></iframe>
 </section>
 
 <section id="submit">
   <h2>Submit an Event</h2>
   <p>Faculty, staff, and student organizations may submit events for review.</p>
 
-  <!-- Replace this link with your Google Form link -->
   <a class="button" href="https://forms.office.com/r/1a4NA6AM3y" target="_blank">Submit an Event</a>
+</section>
+
+<section id="degree">
+  <h2>Degree Plans</h2>
+  <p>Select your program to view the latest degree plan.</p>
+
+  <h3>Undergraduate Programs</h3>
+  <a class="button" href="files/Political_Science_BA.pdf" target="_blank">BA in Political Science</a>
+
+  <h3>Graduate Programs</h3>
+  <a class="button" href="files/Political_Science_MA_Policy.pdf" target="_blank">MA in Political Science (Policy)</a>
+  <a class="button" href="files/Political_Science_MA_World_Politics.pdf" target="_blank">MA in Political Science (World Politics)</a>
+  <a class="button" href="files/MPA_Public_Admin.pdf" target="_blank">MPA – Public Administration</a>
+  <a class="button" href="files/MPA_Public_Policy.pdf" target="_blank">MPA – Public Policy</a>
+  <a class="button" href="files/MPA_AOP.pdf" target="_blank">MPA – AOP</a>
+  <a class="button" href="files/MPA_Global_Security_Leadership.pdf" target="_blank">MPA – Global Security & Leadership</a>
+
+  <h3>Minors</h3>
+  <a class="button" href="files/Global_Studies_Minor.pdf" target="_blank">Global Studies Minor</a>
+  <a class="button" href="files/Global_Security_Minor.pdf" target="_blank">Global Security Minor</a>
+  <a class="button" href="files/Public_Admin_Minor.pdf" target="_blank">Public Administration Minor</a>
+  <a class="button" href="files/Political_Science_Minor.pdf" target="_blank">Political Science Minor</a>
+  <a class="button" href="files/Legal_Studies_Minor.pdf" target="_blank">Legal Studies Minor</a>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
   <p>For questions about the calendar, please contact the PPLSS office, or dongkyu.kim@utrgv.edu.</p>
-  
 </section>
 
 <footer>
