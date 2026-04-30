@@ -4,80 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PPLSS Student Events Calendar</title>
+
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; color: #222; }
     header { background: #003366; color: white; padding: 30px 20px; text-align: center; }
     nav { background: #222; padding: 12px; text-align: center; }
     nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
     section { max-width: 1000px; margin: 30px auto; background: white; padding: 25px; border-radius: 10px; }
-    .button { display: inline-block; background: #003366; color: white; padding: 12px 18px; border-radius: 6px; text-decoration: none; margin: 8px 10px 8px 0; }
-    iframe { width: 100%; height: 650px; border: 0; }
-    footer { text-align: center; padding: 20px; color: #666; }
-    h3 { margin-top: 20px; }
+
+    .button {
+      display: inline-block;
+      background: #003366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin: 8px 10px;
+    }
+
+    /* ✅ NEW: Gallery Styles */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item p {
+      margin-top: 8px;
+      font-size: 14px;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>PPLSS Student Events Calendar</h1>
-  <p>Find upcoming events, workshops, student activities, and school-wide opportunities.</p>
+  <p>Stay updated with all student events and activities</p>
 </header>
 
 <nav>
   <a href="#calendar">Calendar</a>
-  <a href="#submit">Submit Event</a>
-  <a href="#degree">New Degree Plans</a>
-  <a href="#contact">Contact</a>
+  <a href="#degree-plans">Degree Plans</a>
+  <a href="#class-pictures">Class Pictures</a> <!-- ✅ NEW -->
 </nav>
 
 <section id="calendar">
-  <h2>PPLSS Student Event Calendar</h2>
-  <p>This calendar includes events for students in the School of Political Science, Public Affairs, Legal & Security Studies.</p>
+  <h2>Upcoming Events</h2>
+  <p>Check out all upcoming student events below.</p>
 
-  <iframe src="https://calendar.google.com/calendar/embed?src=ac655801d537be95ecdef0d3b4cda13a965a4346ed85a1804cb3ab9fca864bc4%40group.calendar.google.com&ctz=America%2FChicago"></iframe>
+  <!-- Example button -->
+  <a class="button" href="#">View Full Calendar</a>
 </section>
 
-<section id="submit">
-  <h2>Submit an Event</h2>
-  <p>Faculty, staff, and student organizations may submit events for review.</p>
-
-  <a class="button" href="https://forms.office.com/r/1a4NA6AM3y" target="_blank">Submit an Event</a>
-</section>
-
-<section id="degree">
+<section id="degree-plans">
   <h2>Degree Plans</h2>
-  <p>Select your program to view the latest degree plan.</p>
+  <p>Access the latest degree plans below.</p>
 
-  <h3>Undergraduate Programs</h3>
-  <a class="button" href="Political_Science_BA.pdf" target="_blank">BA in Political Science</a>
-
-  <h3>Graduate Programs</h3>
-  <a class="button" href="Political_Science_MA_Policy.pdf" target="_blank">MA in Political Science (Policy)</a>
-  <a class="button" href="Political_Science_MA_World_Politics.pdf" target="_blank">MA in Political Science (World Politics)</a>
-  <a class="button" href="Political_Science_MA_Public_Policy.pdf" target="_blank">MA in Political Science (Public Policy)</a>
-
-  
-  <a class="button" href="MPA_Public_Admin.pdf" target="_blank">MPA – Public Administration</a>
-  <a class="button" href="MPA_Public_Policy.pdf" target="_blank">MPA – Public Policy</a>
-  <a class="button" href="MPA_Global_Security_Leadership.pdf" target="_blank">MPA – Global Security & Leadership</a>
-  <a class="button" href="MPA_AOP.pdf" target="_blank">MPA – AOP</a>
-
-  <h3>Minors</h3>
-  <a class="button" href="Global_Studies_Minor.pdf" target="_blank">Global Studies Minor</a>
-  <a class="button" href="Global_Security_Minor.pdf" target="_blank">Global Security Minor</a>
-  <a class="button" href="Public_Admin_Minor.pdf" target="_blank">Public Administration Minor</a>
-  <a class="button" href="Political_Science_Minor.pdf" target="_blank">Political Science Minor</a>
-  <a class="button" href="Legal_Studies_Minor.pdf" target="_blank">Legal Studies Minor</a>
+  <!-- Example files -->
+  <a class="button" href="files/degree1.docx">BA Political Science</a>
+  <a class="button" href="files/degree2.docx">MPA Program</a>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>For questions about the calendar, please contact the PPLSS office, or dongkyu.kim@utrgv.edu.</p>
-</section>
+<!-- ✅ NEW SECTION: CLASS PICTURES -->
+<section id="class-pictures">
+  <h2>Class Pictures</h2>
+  <p>Explore moments from our classes and student activities.</p>
 
-<footer>
-  <p>School of Political Science, Public Affairs, Legal & Security Studies</p>
-</footer>
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <img src="POLS3310.png.jpg" alt="Class Activity 1">
+      <p>Spring 2026 - Research Methods</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="POLS3310.png" alt="Class Activity 2">
+      <p>Fall 2025 - Policy Workshop</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="POLS3310.png.jpg" alt="Class Activity 3">
+      <p>Student Engagement Event</p>
+    </div>
+
+  </div>
+</section>
 
 </body>
 </html>
