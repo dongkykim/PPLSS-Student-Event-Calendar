@@ -17,10 +17,11 @@
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
   margin-top: 20px;
 }
+
 
 .gallery-item {
   background: #f7f7f7;
@@ -31,7 +32,7 @@
 }
 
 .gallery-item img {
-  width: 70%;
+  width: 100%;
   height: 240px;
   object-fit: cover;
 }
@@ -39,6 +40,18 @@
 .gallery-item p {
   margin: 10px;
   font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
 }
     
   </style>
